@@ -22,7 +22,6 @@ function App() {
       </div>
       <div className="bg-sky-300 text-center font-serif text-3xl">hello</div>
       <div>{counter2}</div>
-
       <button onClick={increase} className="bg-red-500">
         increase
       </button>
