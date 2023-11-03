@@ -5,6 +5,7 @@ function App() {
   // let count = 0;
   //counter2는 함수로써 counter2() 이렇게 써야함
   const [counter2, setCounter2] = useState(0);
+  // setCounter2는 함수형태로
 
   const increase = () => {
     setCounter2(counter2 + 1);
