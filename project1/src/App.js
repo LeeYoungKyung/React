@@ -35,10 +35,12 @@ function App() {
 
   const randomChoice = () => {
     let itemArray = Object.keys(choice); //객체에 키값만 뽑아서 어레이로 만들어주는 함수다
-    console.log("item array", itemArray);
+    // console.log("item array", itemArray);
     let randomItem = Math.floor(Math.random() * itemArray.length);
-    console.log("random value", randomItem);
+    //Math.random() = 0~1의 무작위 숫자를 만들어냄
+    // console.log("random value", randomItem);
     let final = itemArray[randomItem];
+    //곱하기 3으로 만들어 0.xx,1.xx,2.xxx 를 만들고 floor을 줘서 배열번호로 뽑아냄
     return choice[final];
   };
   const judgement = (user, computer) => {
@@ -52,6 +54,7 @@ function App() {
     // user == paper computer rock   user 이긴거지
     // user paper computer scissors user 진거지
 
+    //choice에 들어있는 name : xx 의 값으로 비교해서 승부 결정
     if (user.name == computer.name) {
       return "tie";
     } else if (user.name == "Rock")
@@ -68,6 +71,7 @@ function App() {
         <Box title="Computer" item={computerSelect} result={result} />
       </div>
       <div className="main">
+        {/* 버튼의 onclick는 콜백함수 형태로 해야함 */}
         <button onClick={() => play("scissors")}>가위</button>
         <button onClick={() => play("rock")}>바위</button>
         <button onClick={() => play("paper")}>보</button>
