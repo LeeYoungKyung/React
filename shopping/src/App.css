@@ -1,0 +1,19 @@
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+.menuStyle {
+  display: flex;
+  list-style-type: none;
+}
+.menuStyle > li {
+  padding: 15px;
+}
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
