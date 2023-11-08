@@ -3,6 +3,8 @@ import Login from "./Page/Login";
 import ProductAll from "./Page/ProductAll";
 import ProductDetail from "./Page/ProductDetail";
 import Navbar from "./component/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 // 전체 상품 페이지 , 로그인 페이지, 상세페이지 //react router설치
 //-> npm install react-router-dom@6
 
